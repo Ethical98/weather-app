@@ -1,0 +1,35 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+    <link rel='stylesheet' href='./css/styles.css' />
+    <link rel='icon' href='/img/weather.png' />
+    <script
+      src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js'
+      integrity='sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=='
+      crossorigin='anonymous'
+      referrerpolicy='no-referrer'
+    ></script>
+    <script src='./js/app.js' defer></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class='main-content'>
+      {{>header}}
+      <p>Use this site to get weather</p>
+      <form>
+        <input placeholder="Location" type="text">
+        <button>Search</button>
+
+        </input>
+      </form>
+      <p id="message-1"></p>
+      <p id="message-2"></p>
+    </div>
+
+    {{>footer}}
+
+  </body>
+</html>
